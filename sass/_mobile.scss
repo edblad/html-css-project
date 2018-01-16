@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    background: url('../img/splash.png') no-repeat center -120px;
+    color: $textColor;
+}
+
+h1, h2 {
+    font-family: $headingFont;
+    font-size: 2.2em;
+}
+
+p {
+    font-family: $textFont;
+}
+
+a {
+    color: $textColor;
+}
+
+a:hover{
+    text-decoration: none;
+    color: $brandGreen;
+}
+
+header {
+    padding: 20px;
+}
+
+form {
+    width: 75%;
+    margin-left: 12.5%;
+    font-family: $textFont;
+    text-align: left;
+}
+
+/* MENU */
+.navbar-collapse {
+    @extend .shadow;
+    border-radius: 10px;
+}
+
+.navbar-nav li {
+    font-family: $textFont;
+    font-size: 1.5em;
+    
+    a:hover{
+        background:none;
+    }
+}
+
+.active a{
+        color: $brandGreen;
+    }
+
+.navbar-brand {
+    height: auto;
+
+    img {
+        width: calc(100% - 80px);
+    }
+}
+
+.navbar-toggle {
+    @extend .shadow;
+    
+    .icon-bar {
+        border: 1px solid $textColor;
+    }
+}
+
+/* MAIN */
+.box {
+    @extend .shadow;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    img {
+        transition: transform 1s;
+        height: 245px;
+    }
+}
+
+.box:hover img {
+    transform: scale(1.1);
+}
+
+.fa-facebook-square, .fa-instagram{
+    font-size: 3em;
+    color: #ccc;
+    margin: 0 10px;
+}
+
+.fa-facebook-square:hover, .fa-instagram:hover{
+    color: $brandRed;
+}
+
+
+/* PAGE: Om Elixir */
+.about {
+    padding: 15px 30px;
+    
+    h2 {
+        text-align: center;
+    }
+    
+    p {
+        text-align: left;
+    }
+}
+
+
+/* PAGE: Våra juicer */
+.juiceBox {
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    
+    img {
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    
+    .overlay {
+        transition: .5s ease;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        .yellowJuiceText {
+            background-color: #ffcc00;
+            @extend .juiceText;
+        }
+
+        .redJuiceText {
+            background-color: #cc0033;
+            @extend .juiceText;
+            color: #fff;
+        }
+
+        .greenJuiceText {
+            background-color: #19d300;
+            @extend .juiceText;
+        }
+    }
+}
+
+.juiceInfo {
+    padding: 15px 30px;
+    
+    p {
+        text-align: left;
+    }
+}
+
+.juiceBox:hover img {
+  opacity: 0.3;
+}
+
+.juiceBox:hover .overlay {
+  opacity: 1;
+}
+
+/* PAGE: Butiker*/
+textarea {
+    min-height: 75px;
+}
+
+/* FOOTER */
+footer {
+    font-family: $textFont;
+}

@@ -1,0 +1,28 @@
+.navbar-collapse {
+    background: transparent;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+
+.navbar-brand {
+    height: auto;
+
+    img {
+        width: 100%;
+        }
+    }
+
+.menu {
+    position: relative;
+}
+
+.navbar-nav, {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    li a:hover{
+        background:none;
+    }
+}

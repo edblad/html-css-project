@@ -1,0 +1,18 @@
+$textFont: 'Raleway', sans-serif;
+$headingFont: 'Vidaloka', serif;
+$brandGreen: #19d300;
+$brandRed: #cc0033;
+$brandYellow: #ffcc00;
+$textColor: #2d2d2d;
+
+.juiceText {
+    color: $textColor;
+    font-size: 1em;
+    padding: 16px 32px;
+    font-family: $textFont;
+}
+
+.shadow {
+    background: #fff;
+    box-shadow: 0px 0px 41px 0px #ccc;
+}
